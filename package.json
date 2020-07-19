@@ -1,0 +1,15 @@
+{
+  "name": "vk-bot",
+  "version": "1.0.0",
+  "description": "Ботик-енотик",
+  "main": "mainfile.js",
+  "scripts": {
+    "start": "node mainfile.js"
+  },
+  "author": "FeelinnGlad",
+  "license": "ISC",
+  "dependencies": {    
+  	"firebase": "^7.16.1",
+    "node-vk-bot-api": "^3.3.5"
+  }
+}
