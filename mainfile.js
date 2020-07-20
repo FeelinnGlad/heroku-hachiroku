@@ -2,10 +2,6 @@ const VkBot = require('node-vk-bot-api');
 
 const bot = new VkBot(process.env.TOKEN);
 
-bot.command('/start', (ctx) => {
-    ctx.reply('Heya!! Enter your conversion by this sample: [number][space][math.operator][space][number].');
-});
-
 bot.command(/^\d{1,} (\+|\-|\*|\/|\%|\^) \d{1,}$/, (ctx) => {
     let arr = ctx.split(" ")
 
