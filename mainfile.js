@@ -1,6 +1,6 @@
 const VkBot = require('node-vk-bot-api');
 
-const bot = new VkBot('175f16b9f6336969610f7b922ea53221ede242b044ffefa27a56fd29d789ded8aa6575d793ea30725c6bb');
+const bot = new VkBot(process.env.TOKEN);
 
 bot.command(/^\d{1,} (\+|\-|\*|\/|\%|\^) \d{1,}$/, (ctx) => {
 
